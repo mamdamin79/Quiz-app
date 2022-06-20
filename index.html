@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN icon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <!-- start the Quiz -->
+    <button class="btn-primary btn-start" id="btn-start">Start Quiz</button>
+    <!-- some rule of this game  -->
+    <div class="rule-box">
+        <header>
+            <h3>Some Rules Of This Game</h3>
+        </header>
+        <main>
+            <p>1. You Will Have Only <span>15 seconds</span> per each question.</p>
+            <p>2. Once You Select your Answer, You Cant Reselect.</p>
+            <p>3. You Cant Select Any Option Once Time Goes Off.</p>
+            <p>4. You Cant Exit From The Quiz When You Are Playing.</p>
+            <p>5. You Will Get Points On The Basis Of Your Correct Answer.</p>
+        </main>
+        <footer>
+            <button class="btn-primary exit-btn">Exit Quiz</button>
+            <button class="btn-primary continue-btn">Continue</button>
+        </footer>
+    </div>
+    <!-- quiz box -->
+    <div class="quiz-box">
+        <header>
+            <h4>Awesome quiz application</h4>
+            <div class="timer">
+                <p>Time <span class="time-status">left</span></p>
+                <div class="remaining-time">15</div>
+            </div>
+        </header>
+        <main>
+            <h3 class="question-number-text"><span class="question-number">1</span><b>. </b><span class="question-text"></span></h3>
+            <section class="choices">
+                <!-- <div class="choice-container">
+                    <input type="radio" name="Answer" id="choice1" ><label for="choice1">Hyper Text Processor.</label>
+                </div>
+                <div class="choice-container">
+                    <input type="radio" name="Answer"  id="choice2"><label for="choice2">Hyper Text Markup Language.</label>
+                </div>
+                <div class="choice-container">
+                    <input type="radio" name="Answer"  id="choice3"><label for="choice3">Hyper Text Multiple Language.</label>
+                </div>
+                <div class="choice-container">
+                    <input type="radio" name="Answer"  id="choice4"><label for="choice4">Hyper Tool Multy Language.</label>
+                </div> -->
+            </section>
+        </main>
+        <footer>
+            <p class="counter"><span class="question-number">1</span> of <span class="total">5</span> Questions</p>
+            <button class="btn-primary next-btn">Next</button>
+            <button class="btn-primary finish-btn">Finish</button>
+
+        </footer>
+    </div>
+    <div class="result-box">
+        <img src="/image/family-signboard-2.png" alt="">
+        <h3>You Have Completed Quiz!</h3>
+        <p>You Got <span class="tedad-dorost"></span> of<span class="total">5</span></p>
+    </div>
+    
+
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
