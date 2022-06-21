@@ -25,7 +25,7 @@ let j = 0
 let sag
 // load questions from opentdb api
 async function questionLoader(){
-    const response = await fetch(`https://opentdb.com/api.php?amount=5&category=21&difficulty=medium&type=multiple`)
+    const response = await fetch(`https://opentdb.com/api.php?amount=5&difficulty=medium&type=multiple`)
     const data  = await response.json()
     arrayOfQuestions = data.results
     console.log(arrayOfQuestions)
